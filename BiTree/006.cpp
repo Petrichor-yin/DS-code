@@ -1,7 +1,7 @@
 #include <iostream>
 #include "BITreefun.cpp"
-using namespace std; //ÌîĞ´ÔªËØÖµ²»Òª³¬¹ı10£¬ÒòÎª×Ö·ûĞÍ
-// p13 03
+using namespace std; //å¡«å†™å…ƒç´ å€¼ä¸è¦è¶…è¿‡10ï¼Œå› ä¸ºå­—ç¬¦å‹
+
 void Max(BTNode *p, char &max)
 {
   if (p != NULL)
@@ -17,5 +17,5 @@ int main()
   BTNode *T = aaaa();
   char max = '0';
   Max(T, max);
-  cout << "×î´óÖµÎª:" << max << endl;
+  cout << "æœ€å¤§å€¼ä¸º:" << max << endl;
 }
