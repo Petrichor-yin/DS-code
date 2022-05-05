@@ -5,7 +5,7 @@ using namespace std;
 
 void create(CBNode *&T, char e[], int degree[], int n)
 {
-  CBNode *p = new CBNode[maxsize]; //这里p不是指针而是数组对象
+  CBNode *p = new CBNode[maxsize]; //杩欓噷p涓嶆槸鎸囬拡鑰屾槸鏁扮粍瀵硅薄
   int i, j, d, k = 0;
   for (i = 0; i < n; ++i)
   {
@@ -29,8 +29,6 @@ void create(CBNode *&T, char e[], int degree[], int n)
     }
   }
   T = p;
-  // cout << "hahah:" << T[0].data << endl;
-  // delete p;
 }
 
 void pre(CBNode *T)
