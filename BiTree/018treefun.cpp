@@ -6,7 +6,7 @@ typedef struct BTNode
   struct BTNode *lchild, *rchild, *parent;
 } BTNode, *BiTree;
 
-void aaaa(BTNode *&T, BTNode *p) //这里不可以*&p
+void aaaa(BTNode *&T, BTNode *p) 
 {
   char x;
   cin >> x;
