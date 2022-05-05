@@ -1,7 +1,7 @@
 #include <iostream>
 #include "BiTree.cpp"
 using namespace std;
-// p19 01
+
 int pre = -INT_MAX;
 int JudgeBST(BTNode *root)
 {
@@ -19,8 +19,8 @@ int main()
 {
   BTNode *T = aaaa();
   if (JudgeBST(T))
-    cout << "ÊÇ¶þ²æÅÅÐòÊ÷!";
+    cout << "æ˜¯äºŒå‰æŽ’åºæ ‘!";
   else
-    cout << "²»ÊÇ¶þ²æÅÅÐòÊ÷!";
+    cout << "ä¸æ˜¯äºŒå‰æŽ’åºæ ‘!";
   return 0;
 }
