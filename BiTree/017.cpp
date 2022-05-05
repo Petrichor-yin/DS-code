@@ -1,7 +1,7 @@
 #include <iostream>
 #include "BITreefun.cpp"
 using namespace std;
-// p13 04
+
 BiTree create(char A[], int i, int n)
 {
   BTNode *t;
