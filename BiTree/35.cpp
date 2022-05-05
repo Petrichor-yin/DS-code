@@ -1,7 +1,7 @@
 #include <iostream>
 #include "BiTreefun.cpp"
 using namespace std;
-//ÍõµÀº¢×ÓĞÖµÜ±íÊ¾·¨ÇóÒ¶×Ó½Úµã¸öÊı(±¾ÖÊÃ»ÓĞ×ó×ÓÊ÷µÄ½Úµã)
+
 int fun(BTNode *p)
 {
   if (p == NULL)
@@ -13,6 +13,6 @@ int fun(BTNode *p)
 int main()
 {
   BTNode *T = aaaa();
-  cout << "Ò¶×Ó½Úµã¸öÊıÎª:" << fun(T);
+  cout << "å¶å­èŠ‚ç‚¹ä¸ªæ•°ä¸º:" << fun(T);
   return 0;
 }
