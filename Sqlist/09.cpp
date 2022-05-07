@@ -6,22 +6,18 @@ int Find(Sqlist &A, Sqlist &B)
 {
   int i, j, k;
   i = j = k = 0;
-  while (1)
-  {
+  Sqlist C;
+  while (i < A.length && j < B.length)
     if (A.data[i] < B.data[j])
-    {
-      if (++k == (A.length + B.length) / 2)
-        return A.data[i];
-      ++i;
-    }
+      C.data[k++] = A.data[i++];
     else
-    {
-      if (++k == (A.length + B.length) / 2)
-        return B.data[j];
-      ++j;
-    }
-  }
-} //法一
+      C.data[k++] = B.data[j++];
+  while (i < A.length)
+    C.data[k++] = A.data[i++];
+  while (j < B.length)
+    C.data[k++] = B.data[j++];
+  return C.data[(A.length + B.length) / 2];
+} //娉曚竴
 
 int find(Sqlist &A, Sqlist &B)
 {
@@ -47,7 +43,7 @@ int find(Sqlist &A, Sqlist &B)
     return B.data[b0];
   else
     return A.data[a0];
-} //法二
+} //娉曚簩
 
 int main()
 {
