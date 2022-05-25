@@ -16,7 +16,7 @@ int Find(Sqlist &A, Sqlist &B)
     C.data[k++] = A.data[i++];
   while (j < B.length)
     C.data[k++] = B.data[j++];
-  return C.data[(A.length + B.length) / 2];
+  return C.data[(A.length + B.length-1) / 2];
 } //法一
 
 int find(Sqlist &A, Sqlist &B)
