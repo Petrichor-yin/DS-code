@@ -12,8 +12,7 @@ void del_min(LNode *&L)
       minp = p;
     p = p->next;
   }
-  LNode *u = new LNode;
-  u = minp->next;
+  LNode *u = minp->next;
   minp->next = u->next;
   free(u);
 }
