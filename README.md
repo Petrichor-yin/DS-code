@@ -4,3 +4,4 @@
 关于代码的视频讲解，欢迎关注我的b站账号：https://space.bilibili.com/117460620?spm_id_from=333.1007.0.0
 ### 修改记录：
 2022.5.25 修改了sqlist 09.cpp的法一。
+2022.6.5 修改了linklist 07.cpp的第15行。
