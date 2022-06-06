@@ -15,10 +15,10 @@ Linklist create(LNode *&A)
     p = p->next;
     rb->next = p;
     rb = p;
-    p = p->next;
+    if (p != NULL)
+      p = p->next;
   }
   ra->next = NULL;
-  rb->next = NULL;
   return B;
 }
 
@@ -28,13 +28,13 @@ int main()
   LNode *B = create(A);
   LNode *q = A->next;
   LNode *p = B->next;
-  cout << "AΪ��";
+  cout << "AÎŞŁş";
   while (q != NULL)
   {
     cout << q->data << " ";
     q = q->next;
   }
-  cout << "BΪ��";
+  cout << "BÎŞŁş";
   while (p != NULL)
   {
     cout << p->data << " ";
