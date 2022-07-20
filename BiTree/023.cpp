@@ -40,8 +40,8 @@ BiTree Nonpost(BTNode *bt, BTNode *p, BTNode *q)
       }
     }
   }
-  for (int i = 0; i < top1; ++i)
-    for (int j = 0; j < top2; ++j)
+  for (int i = 0; i < =top1; ++i)
+    for (int j = 0; j < =top2; ++j)
       if (s1[i] == s2[j])
         return s1[i];
   return NULL;
