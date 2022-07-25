@@ -1,29 +1,29 @@
 #include <iostream>
 #include "headfun.cpp"
 using namespace std;
-//·¨Ò»±ê×¼½â
+//æ³•ä¸€æ ‡å‡†è§£
 int find(LNode *head, int k)
 {
   LNode *q = head->next;
   LNode *p = head;
   int i = 1;
-  while (q->next != NULL)
+  while (q != NULL)
   {
     q = q->next;
     ++i;
-    if (i >= k)
+    if (i > k)
       p = p->next;
   }
   if (p == head)
     return 0;
   else
   {
-    cout << "µ¹ÊýµÚK¸ö½ÚµãÎª£º" << p->data;
+    cout << "å€’æ•°ç¬¬Kä¸ªèŠ‚ç‚¹ä¸ºï¼š" << p->data;
     return 1;
   }
 }
 
-//·¨¶þ±©Á¦½â
+//æ³•äºŒæš´åŠ›è§£
 int len(LNode *L)
 {
   LNode *p = L->next;
