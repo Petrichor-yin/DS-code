@@ -43,9 +43,27 @@ int comp(BTNode *p)
   return -100;
 }
 
+void func(BTNode *p,int deep){
+  if(p!=NULL){
+    if((p->lchild&&p->rchild)&&deep>=1)
+      cout<<'(';
+    // deep++;
+    func(p->lchild,deep+1);
+    cout<<p->data;
+    func(p->rchild,deep+1);
+    // deep--;
+    if((p->lchild&&p->rchild)&&deep>=1)
+      cout<<')';
+  }
+}
+
 int main()
 {
   BTNode *T = aaaa();
+  int deep=0;
+  cout<<"result1:";
+  func(T,deep);
+  cout<<endl;
   int a = comp(T);
-  cout << "Êä³öÎª:" << a << endl;
+  cout << "result2 : " << a << endl;
 }
