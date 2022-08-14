@@ -25,8 +25,8 @@ void change2(char pre[], int L1, int R1, char mid[], int L2, int R2)
 {
   if (L1 <= R1 && L2 <= R2)
   {
-    mid[(L2+R2+1)/2] = pre[L1];
-    change2(pre, L1+1, (L1 + R1 +1) / 2, mid, L2 , (L2 + R2 - 1) / 2);
+    mid[(L2+R2)/2] = pre[L1];
+    change2(pre, L1+1, (L1 + R1 +1) / 2, mid, L2 , (L2 + R2) / 2-1);
     change2(pre, (L1 + R1 +1) / 2 + 1, R1 , mid, (L2 + R2 + 1) / 2 + 1, R2);
   }
 }//先->中
