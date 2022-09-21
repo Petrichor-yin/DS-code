@@ -1,26 +1,18 @@
 #include <iostream>
 using namespace std;
 #define maxsize 50
-struct stack
-{
-  int no;
-  double val;
-} st[maxsize];
 
-double fun(int n, double x)
-{
-  int top = -1, i;
-  double fv1 = 1, fv2 = 2 * x;
-  for (i = n; i >= 2; i--)
-  {
-    top++;
-    st[top].no = i;
-  }
-  while (top >= 0)
-  {
-    st[top].val = 2 * x * fv2 - 2 * (st[top].no - 1) * fv1;
-    fv1 = fv2;
-    fv2 = st[top].val;
+double fun2(int n,double x){
+  int top=n-2;
+  double st[n];
+  double fv1=1;
+  double fv2=2*x;
+  n=2;
+  while(top>=0){
+    st[top]=2*x*fv2-2*(n-1)*fv1;
+    fv1=fv2;
+    fv2=st[top];
+    ++n;
     top--;
   }
   if (n == 0)
@@ -29,5 +21,7 @@ double fun(int n, double x)
 }
 int main()
 {
-  cout << fun(2, 2);
+  int n=3;
+  cout << fun2(n, 3);
+  return 0;
 }
